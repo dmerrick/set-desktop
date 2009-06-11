@@ -1,36 +1,36 @@
-# This program is used to set the background on a computer running OS X.
-# The tricky thing is that it saves the desired image inside the script itself.
-#
-# This is useful for pranking your friends who leave their computers unprotected
-# insofar as you could run something like:
-#
-# curl http://http://your.server.com/this_script.rb | ruby
-#
-# To quickly set the background to whatever you'd like to make them look at.
-#
-# === Changing the saved image
-# To change the image stored in this file, simply run this script on your 
-# computer with the filename as an argument. It can even be a URL!
-# 
-# For instance:
-# set_desktop.rb ~/Downloads/funny.png
-# set_desktop.rb http://farm1.static.flickr.com/4/6532650_7c255cbbd8_o_d.jpg
-#
-# === Using a screenshot
-# To quickly recreate an old computer prank, you can choose to use a screenshot
-# instead of a stored image. Once you do, you can hide all of their windows
-# and watch them try to figure out why nothing is reponding to their clicks.
-#
-# To do this, use the #create_image_from_screenshot method.
-#
-# === Changing the login image
-# To be even more devious, you can use this program to change the image on the
-# OS X login screen. They won't notice til they reboot, and most people don't
-# know how to change it back!
-#
-# To do this, use the #set_login_image! method.
-#
-# Author:: Dana Merrick (mailto:letterkills+setdesktop@gmail.com)
-# Copyright:: Copyright (c) 2009 Dana Merrick
-# License:: Released under the MIT license
+This program is used to set the background on a computer running OS X.
+The tricky thing is that it saves the desired image inside the script itself.
+
+This is useful for pranking your friends who leave their computers unprotected
+insofar as you could run something like:
+
+curl http://http://your.server.com/this_script.rb | ruby
+
+To quickly set the background to whatever you'd like to make them look at.
+
+=== Changing the saved image
+To change the image stored in this file, simply run this script on your 
+computer with the filename as an argument. It can even be a URL!
+
+For instance:
+set_desktop.rb ~/Downloads/funny.png
+set_desktop.rb http://farm1.static.flickr.com/4/6532650_7c255cbbd8_o_d.jpg
+
+=== Using a screenshot
+To quickly recreate an old computer prank, you can choose to use a screenshot
+instead of a stored image. Once you do, you can hide all of their windows
+and watch them try to figure out why nothing is reponding to their clicks.
+
+To do this, use the #create_image_from_screenshot method.
+
+=== Changing the login image
+To be even more devious, you can use this program to change the image on the
+OS X login screen. They won't notice til they reboot, and most people don't
+know how to change it back!
+
+To do this, use the #set_login_image! method.
+
+Author:: Dana Merrick (mailto:letterkills+setdesktop@gmail.com)
+Copyright:: Copyright (c) 2009 Dana Merrick
+License:: Released under the MIT license
 
