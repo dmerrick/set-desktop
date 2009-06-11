@@ -4,7 +4,7 @@ The tricky thing is that it saves the desired image inside the script itself.
 This is useful for pranking your friends who leave their computers unprotected
 insofar as you could run something like:
 
-    curl -L curl -L http://tinyurl.com/setdesktop | ruby
+    curl -L http://tinyurl.com/setdesktop | ruby
 
 To quickly set the background to whatever you'd like to make them look at. (The -L flag is needed when using an alias like tinyurl.)
 
