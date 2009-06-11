@@ -14,8 +14,8 @@
 # computer with the filename as an argument. It can even be a URL!
 # 
 # For instance:
-# set_desktop.rb /path/to/file.png
-# set_desktop.rb http://some.url/file.png
+# set_desktop.rb ~/Downloads/funny.png
+# set_desktop.rb http://farm1.static.flickr.com/4/6532650_7c255cbbd8_o_d.jpg
 #
 # === Using a screenshot
 # To quickly recreate an old computer prank, you can choose to use a screenshot
@@ -51,6 +51,7 @@ class SetDesktop
     `defaults write /Library/Preferences/com.apple.loginwindow DesktopPicture "#{File.expand_path(@desktop_image)}"`
   end
 
+  # This method sets the desktop background to the specified image.
   def set_desktop_background!
     command = <<-EOF 
     /usr/bin/osascript -e 'tell application "Finder"
@@ -65,6 +66,7 @@ class SetDesktop
   # can be done by manually editing the file.
   #--
   # TODO: sanity checks on the data?
+  # TODO: automatically read file type?
   def create_image_from_DATA
     puts "Creating file at " + @desktop_image
     image_data = DATA.read
