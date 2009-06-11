@@ -13,8 +13,8 @@ To change the image stored in this file, simply run this script on your
 computer with the filename as an argument. It can even be a URL!
 
 For instance:
-set_desktop.rb ~/Downloads/funny.png
-set_desktop.rb http://farm1.static.flickr.com/4/6532650_7c255cbbd8_o_d.jpg
++set_desktop.rb ~/Downloads/funny.png+
++set_desktop.rb http://farm1.static.flickr.com/4/6532650_7c255cbbd8_o_d.jpg+
 
 === Using a screenshot
 To quickly recreate an old computer prank, you can choose to use a screenshot
