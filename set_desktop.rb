@@ -66,12 +66,16 @@ class SetDesktop
   # can be done by manually editing the file.
   #--
   # TODO: sanity checks on the data?
-  # TODO: automatically read file type?
   def create_image_from_DATA
     puts "Creating file at " + @desktop_image
     image_data = DATA.read
     new_file = File.new(@desktop_image,"w+")
     new_file.write(image_data)
+  end
+
+  # Uses the file command to check the file extension. Not currently used.
+  def check_file_type
+    `file #{@desktop_image}`.sub(/^.*: /,'').split.first.downcase
   end
 
   # Takes a screenshot and uses that as the image.
